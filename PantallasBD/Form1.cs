@@ -40,5 +40,11 @@ namespace PantallasBD
         {
             Application.Exit();
         }
+
+        private void buttonEliminar_Click(object sender, EventArgs e)
+        {
+            FormEliminar formEliminar = new FormEliminar();
+            formEliminar.ShowDialog();
+        }
     }
 }

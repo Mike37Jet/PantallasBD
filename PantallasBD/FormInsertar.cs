@@ -55,5 +55,10 @@ namespace PantallasBD
 
 
         }
+
+        private void CodProd_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

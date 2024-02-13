@@ -90,6 +90,7 @@
             this.CodProd.Size = new System.Drawing.Size(40, 13);
             this.CodProd.TabIndex = 5;
             this.CodProd.Text = "Código";
+            this.CodProd.Click += new System.EventHandler(this.CodProd_Click);
             // 
             // label2
             // 

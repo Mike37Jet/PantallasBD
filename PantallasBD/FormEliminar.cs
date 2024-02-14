@@ -25,26 +25,7 @@ namespace PantallasBD
 
         private void FormEliminar_Load(object sender, EventArgs e)
         {
-            String codigo = this.txtCodigo.Text;
-
-            // Reemplaza la cadena de conexión con la correcta para tu entorno
-            string strConn = "Data Source=1-20-03-E004-03; database=Facturacion; Integrated Security=SSPI";
-
-            using (SqlConnection conn = new SqlConnection(strConn))
-            {
-                conn.Open();
-
-                // Utiliza parámetros para evitar problemas de seguridad y manejar tipos de datos
-                string strComm = "DELETE FROM Productos WHERE id_producto = "+codigo+"";
-
-                using (SqlCommand comm = new SqlCommand(strComm, conn))
-                {
- 
-                    int num = comm.ExecuteNonQuery();
-                    txtN.Text = num.ToString();
-                    // Puedes utilizar 'num' para verificar cuántas filas fueron afectadas por la operación DELETE
-                }
-            }
+        
         }
 
 
@@ -55,7 +36,24 @@ namespace PantallasBD
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+            String codigo = this.txtCodigo.Text;
 
+            // Reemplaza la cadena de conexión con la correcta para tu entorno
+            string strConn = "Data Source=ASUS; database=Facturacion; Integrated Security=SSPI";
+
+            using (SqlConnection conn = new SqlConnection(strConn))
+            {
+                conn.Open();
+
+                // Utiliza parámetros para evitar problemas de seguridad y manejar tipos de datos
+                string strComm = "DELETE FROM Productos WHERE id_producto = " + codigo + "";
+
+                using (comm = new SqlCommand(strComm, conn))
+                {
+                    int num = comm.ExecuteNonQuery();
+                    txtN2.Text = num.ToString();
+                }
+            }
         }
     }
 }

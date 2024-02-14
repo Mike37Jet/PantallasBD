@@ -41,7 +41,7 @@ namespace PantallasBD
             String idProveedor = this.txtIdProveedor.Text;
            
 
-           strConn = "Data Source=1-20-03-E004-03; database=Facturacion; Integrated Security=SSPI";
+           strConn = "Data Source=ASUS; database=Facturacion; Integrated Security=SSPI";
            using(conn = new SqlConnection(strConn))
             {
                 conn.Open();

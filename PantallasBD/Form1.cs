@@ -46,5 +46,11 @@ namespace PantallasBD
             FormEliminar formEliminar = new FormEliminar();
             formEliminar.ShowDialog();
         }
+
+        private void buttonConsultar_Click(object sender, EventArgs e)
+        {
+            FormConsultar formConsultar = new FormConsultar();
+            formConsultar.ShowDialog();
+        }
     }
 }

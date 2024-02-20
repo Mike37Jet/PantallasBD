@@ -61,13 +61,12 @@ namespace PantallasBD
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(213, 144);
+            this.label2.Location = new System.Drawing.Point(178, 144);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(299, 24);
+            this.label2.Size = new System.Drawing.Size(101, 24);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Busqueda -> Nombre/ID producto:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.label2.Text = "Busqueda ";
             // 
             // label3
             // 
@@ -83,27 +82,31 @@ namespace PantallasBD
             // txtPrecio
             // 
             this.txtPrecio.Location = new System.Drawing.Point(287, 223);
-            this.txtPrecio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(159, 22);
-            this.txtPrecio.TabIndex = 4;
+            this.txtPrecio.TabIndex = 2;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(534, 144);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.ForeColor = System.Drawing.Color.Gray;
+            this.txtNombre.Location = new System.Drawing.Point(287, 147);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(278, 22);
-            this.txtNombre.TabIndex = 5;
+            this.txtNombre.TabIndex = 1;
+            this.txtNombre.Text = "Nombre o ID";
+            this.txtNombre.Enter += new System.EventHandler(this.txtNombre_Enter);
+            this.txtNombre.Leave += new System.EventHandler(this.txtNombre_Leave);
             // 
             // btnActualizarPrecio
             // 
             this.btnActualizarPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizarPrecio.Location = new System.Drawing.Point(560, 219);
-            this.btnActualizarPrecio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnActualizarPrecio.Margin = new System.Windows.Forms.Padding(4);
             this.btnActualizarPrecio.Name = "btnActualizarPrecio";
             this.btnActualizarPrecio.Size = new System.Drawing.Size(200, 42);
-            this.btnActualizarPrecio.TabIndex = 6;
+            this.btnActualizarPrecio.TabIndex = 3;
             this.btnActualizarPrecio.Text = "Actualizar Precio";
             this.btnActualizarPrecio.UseVisualStyleBackColor = true;
             this.btnActualizarPrecio.Click += new System.EventHandler(this.btnActualizarPrecio_Click_1);
@@ -112,10 +115,10 @@ namespace PantallasBD
             // 
             this.btnActualizarStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizarStock.Location = new System.Drawing.Point(569, 316);
-            this.btnActualizarStock.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnActualizarStock.Margin = new System.Windows.Forms.Padding(4);
             this.btnActualizarStock.Name = "btnActualizarStock";
             this.btnActualizarStock.Size = new System.Drawing.Size(191, 36);
-            this.btnActualizarStock.TabIndex = 7;
+            this.btnActualizarStock.TabIndex = 5;
             this.btnActualizarStock.Text = "Actualizar Stock";
             this.btnActualizarStock.UseVisualStyleBackColor = true;
             this.btnActualizarStock.Click += new System.EventHandler(this.btnActualizarStock_Click_1);
@@ -135,17 +138,18 @@ namespace PantallasBD
             // 
             this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegresar.Location = new System.Drawing.Point(453, 439);
-            this.btnRegresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRegresar.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(184, 38);
-            this.btnRegresar.TabIndex = 9;
+            this.btnRegresar.TabIndex = 0;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = true;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // txtAfectacion
             // 
             this.txtAfectacion.Location = new System.Drawing.Point(843, 229);
-            this.txtAfectacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAfectacion.Margin = new System.Windows.Forms.Padding(4);
             this.txtAfectacion.Name = "txtAfectacion";
             this.txtAfectacion.Size = new System.Drawing.Size(59, 22);
             this.txtAfectacion.TabIndex = 10;
@@ -153,10 +157,10 @@ namespace PantallasBD
             // txtActualizacion2
             // 
             this.txtActualizacion2.Location = new System.Drawing.Point(843, 323);
-            this.txtActualizacion2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtActualizacion2.Margin = new System.Windows.Forms.Padding(4);
             this.txtActualizacion2.Name = "txtActualizacion2";
             this.txtActualizacion2.Size = new System.Drawing.Size(59, 22);
-            this.txtActualizacion2.TabIndex = 11;
+            this.txtActualizacion2.TabIndex = 10;
             // 
             // label5
             // 
@@ -165,7 +169,7 @@ namespace PantallasBD
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(174, 16);
-            this.label5.TabIndex = 12;
+            this.label5.TabIndex = 0;
             this.label5.Text = "Incrementar stock -> numero";
             // 
             // label6
@@ -181,10 +185,10 @@ namespace PantallasBD
             // txtCantidad
             // 
             this.txtCantidad.Location = new System.Drawing.Point(288, 314);
-            this.txtCantidad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCantidad.Margin = new System.Windows.Forms.Padding(4);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(157, 22);
-            this.txtCantidad.TabIndex = 14;
+            this.txtCantidad.TabIndex = 4;
             // 
             // FormActualizar
             // 
@@ -205,8 +209,9 @@ namespace PantallasBD
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormActualizar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormActualizar";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -220,6 +225,8 @@ namespace PantallasBD
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.TextBox txtNombre;
+        private EventHandler btnActualizarStock_Click;
+        private EventHandler btnActualizarPrecio_Click;
         private System.Windows.Forms.Button btnActualizarPrecio;
         private System.Windows.Forms.Button btnActualizarStock;
         private System.Windows.Forms.Label label4;
@@ -229,7 +236,6 @@ namespace PantallasBD
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtCantidad;
-        private EventHandler btnActualizarStock_Click;
-        private EventHandler btnActualizarPrecio_Click;
+        
     }
 }

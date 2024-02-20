@@ -122,8 +122,8 @@
             this.Controls.Add(this.txtCodigo);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormEliminar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Eliminar";
-          
             this.ResumeLayout(false);
             this.PerformLayout();
 

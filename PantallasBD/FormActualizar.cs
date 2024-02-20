@@ -40,9 +40,27 @@ namespace PantallasBD
             txtActualizacion2.Text = num.ToString();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void txtNombre_Leave(object sender, EventArgs e)
         {
+            if (txtNombre.Text == "")
+            {
+                txtNombre.Text = "Nombre o ID";
+                txtNombre.ForeColor = Color.Gray;
+            }
+        }
 
+        private void txtNombre_Enter(object sender, EventArgs e)
+        {
+            if (txtNombre.Text == "Nombre o ID")
+            {
+                txtNombre.Text = "";
+                txtNombre.ForeColor = Color.Black;
+            }
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

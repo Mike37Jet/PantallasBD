@@ -46,33 +46,37 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(200, 20);
+            this.label1.Location = new System.Drawing.Point(267, 25);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(209, 24);
+            this.label1.Size = new System.Drawing.Size(270, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Consultar Producto";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(201, 62);
+            this.label2.Location = new System.Drawing.Point(268, 76);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 13);
+            this.label2.Size = new System.Drawing.Size(51, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Código";
             // 
             // textCodigo
             // 
-            this.textCodigo.Location = new System.Drawing.Point(258, 62);
+            this.textCodigo.Location = new System.Drawing.Point(344, 76);
+            this.textCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textCodigo.Name = "textCodigo";
-            this.textCodigo.Size = new System.Drawing.Size(100, 20);
+            this.textCodigo.Size = new System.Drawing.Size(132, 22);
             this.textCodigo.TabIndex = 2;
             // 
             // btnConsultar
             // 
-            this.btnConsultar.Location = new System.Drawing.Point(271, 97);
+            this.btnConsultar.Location = new System.Drawing.Point(361, 119);
+            this.btnConsultar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(75, 23);
+            this.btnConsultar.Size = new System.Drawing.Size(100, 28);
             this.btnConsultar.TabIndex = 3;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.UseVisualStyleBackColor = true;
@@ -87,9 +91,10 @@
             this.columnHeader4,
             this.columnHeader5});
             this.listaConsulta.HideSelection = false;
-            this.listaConsulta.Location = new System.Drawing.Point(76, 148);
+            this.listaConsulta.Location = new System.Drawing.Point(101, 182);
+            this.listaConsulta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listaConsulta.Name = "listaConsulta";
-            this.listaConsulta.Size = new System.Drawing.Size(459, 164);
+            this.listaConsulta.Size = new System.Drawing.Size(611, 201);
             this.listaConsulta.TabIndex = 4;
             this.listaConsulta.UseCompatibleStateImageBehavior = false;
             this.listaConsulta.View = System.Windows.Forms.View.Details;
@@ -121,9 +126,10 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(529, 415);
+            this.btnSalir.Location = new System.Drawing.Point(705, 511);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.Size = new System.Drawing.Size(100, 28);
             this.btnSalir.TabIndex = 5;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -131,9 +137,10 @@
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(271, 339);
+            this.btnLimpiar.Location = new System.Drawing.Point(361, 417);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpiar.Size = new System.Drawing.Size(100, 28);
             this.btnLimpiar.TabIndex = 6;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
@@ -141,9 +148,9 @@
             // 
             // FormConsultar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(616, 450);
+            this.ClientSize = new System.Drawing.Size(821, 554);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.listaConsulta);
@@ -151,7 +158,9 @@
             this.Controls.Add(this.textCodigo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormConsultar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consultar";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -38,9 +38,10 @@
             // 
             // buttonInsertar
             // 
-            this.buttonInsertar.Location = new System.Drawing.Point(263, 130);
+            this.buttonInsertar.Location = new System.Drawing.Point(351, 160);
+            this.buttonInsertar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonInsertar.Name = "buttonInsertar";
-            this.buttonInsertar.Size = new System.Drawing.Size(75, 23);
+            this.buttonInsertar.Size = new System.Drawing.Size(100, 28);
             this.buttonInsertar.TabIndex = 0;
             this.buttonInsertar.Text = "Insertar";
             this.buttonInsertar.UseVisualStyleBackColor = true;
@@ -48,9 +49,10 @@
             // 
             // buttonEliminar
             // 
-            this.buttonEliminar.Location = new System.Drawing.Point(263, 184);
+            this.buttonEliminar.Location = new System.Drawing.Point(351, 226);
+            this.buttonEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonEliminar.Name = "buttonEliminar";
-            this.buttonEliminar.Size = new System.Drawing.Size(75, 23);
+            this.buttonEliminar.Size = new System.Drawing.Size(100, 28);
             this.buttonEliminar.TabIndex = 1;
             this.buttonEliminar.Text = "Eliminar";
             this.buttonEliminar.UseVisualStyleBackColor = true;
@@ -58,18 +60,21 @@
             // 
             // buttonActualizar
             // 
-            this.buttonActualizar.Location = new System.Drawing.Point(263, 238);
+            this.buttonActualizar.Location = new System.Drawing.Point(351, 293);
+            this.buttonActualizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonActualizar.Name = "buttonActualizar";
-            this.buttonActualizar.Size = new System.Drawing.Size(75, 23);
+            this.buttonActualizar.Size = new System.Drawing.Size(100, 28);
             this.buttonActualizar.TabIndex = 2;
             this.buttonActualizar.Text = "Actualizar";
             this.buttonActualizar.UseVisualStyleBackColor = true;
+            this.buttonActualizar.Click += new System.EventHandler(this.buttonActualizar_Click);
             // 
             // buttonConsultar
             // 
-            this.buttonConsultar.Location = new System.Drawing.Point(263, 292);
+            this.buttonConsultar.Location = new System.Drawing.Point(351, 359);
+            this.buttonConsultar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonConsultar.Name = "buttonConsultar";
-            this.buttonConsultar.Size = new System.Drawing.Size(75, 23);
+            this.buttonConsultar.Size = new System.Drawing.Size(100, 28);
             this.buttonConsultar.TabIndex = 3;
             this.buttonConsultar.Text = "Consultar";
             this.buttonConsultar.UseVisualStyleBackColor = true;
@@ -78,17 +83,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(234, 62);
+            this.label1.Location = new System.Drawing.Point(312, 76);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(144, 13);
+            this.label1.Size = new System.Drawing.Size(178, 16);
             this.label1.TabIndex = 5;
             this.label1.Text = "GESTIÓN DE PRODUCTOS";
             // 
             // buttonSalir
             // 
-            this.buttonSalir.Location = new System.Drawing.Point(500, 417);
+            this.buttonSalir.Location = new System.Drawing.Point(667, 513);
+            this.buttonSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonSalir.Name = "buttonSalir";
-            this.buttonSalir.Size = new System.Drawing.Size(75, 23);
+            this.buttonSalir.Size = new System.Drawing.Size(100, 28);
             this.buttonSalir.TabIndex = 4;
             this.buttonSalir.Text = "Salir";
             this.buttonSalir.UseVisualStyleBackColor = true;
@@ -98,15 +105,16 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 450);
+            this.ClientSize = new System.Drawing.Size(779, 554);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonSalir);
             this.Controls.Add(this.buttonConsultar);
             this.Controls.Add(this.buttonActualizar);
             this.Controls.Add(this.buttonEliminar);
             this.Controls.Add(this.buttonInsertar);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Base de Datos";

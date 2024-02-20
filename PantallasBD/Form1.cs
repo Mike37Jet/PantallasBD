@@ -52,5 +52,11 @@ namespace PantallasBD
             FormConsultar formConsultar = new FormConsultar();
             formConsultar.ShowDialog();
         }
+
+        private void buttonActualizar_Click(object sender, EventArgs e)
+        {
+            FormActualizar formActualizar = new FormActualizar();
+            formActualizar.ShowDialog();
+        }
     }
 }

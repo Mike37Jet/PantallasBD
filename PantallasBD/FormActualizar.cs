@@ -26,7 +26,7 @@ namespace PantallasBD
             String strComando = "UPDATE productos SET precio_unit = " + txtPrecio.Text + "WHERE nombre_prod LIKE '" + strNombreProd + "%' OR id_producto = "+strNombreProd;
             SqlCommand comando = new SqlCommand(strComando, conexion);
             int num = comando.ExecuteNonQuery();
-            txtAfectacion.Text = num.ToString();
+            txtAfectacion1.Text = num.ToString();
         }
 
         private void btnActualizarStock_Click_1(object sender, EventArgs e)
@@ -37,7 +37,7 @@ namespace PantallasBD
             String strComando = "UPDATE productos SET unidad += " + txtCantidad.Text + "WHERE nombre_prod LIKE '" + strNombreProd + "%' OR id_producto = " + strNombreProd;
             SqlCommand comando = new SqlCommand(strComando, conexion);
             int num = comando.ExecuteNonQuery();
-            txtActualizacion2.Text = num.ToString();
+            txtActualizacion1.Text = num.ToString();
         }
 
         private void txtNombre_Leave(object sender, EventArgs e)
@@ -61,6 +61,11 @@ namespace PantallasBD
         private void btnRegresar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

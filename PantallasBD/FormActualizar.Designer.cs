@@ -39,11 +39,13 @@ namespace PantallasBD
             this.btnActualizarStock = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.btnRegresar = new System.Windows.Forms.Button();
-            this.txtAfectacion = new System.Windows.Forms.TextBox();
-            this.txtActualizacion2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtCantidad = new System.Windows.Forms.TextBox();
+            this.txtAfectacion1 = new System.Windows.Forms.Label();
+            this.txtActualizacion1 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -102,7 +104,7 @@ namespace PantallasBD
             // btnActualizarPrecio
             // 
             this.btnActualizarPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizarPrecio.Location = new System.Drawing.Point(560, 219);
+            this.btnActualizarPrecio.Location = new System.Drawing.Point(560, 213);
             this.btnActualizarPrecio.Margin = new System.Windows.Forms.Padding(4);
             this.btnActualizarPrecio.Name = "btnActualizarPrecio";
             this.btnActualizarPrecio.Size = new System.Drawing.Size(200, 42);
@@ -114,10 +116,10 @@ namespace PantallasBD
             // btnActualizarStock
             // 
             this.btnActualizarStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizarStock.Location = new System.Drawing.Point(569, 316);
+            this.btnActualizarStock.Location = new System.Drawing.Point(560, 304);
             this.btnActualizarStock.Margin = new System.Windows.Forms.Padding(4);
             this.btnActualizarStock.Name = "btnActualizarStock";
-            this.btnActualizarStock.Size = new System.Drawing.Size(191, 36);
+            this.btnActualizarStock.Size = new System.Drawing.Size(200, 42);
             this.btnActualizarStock.TabIndex = 5;
             this.btnActualizarStock.Text = "Actualizar Stock";
             this.btnActualizarStock.UseVisualStyleBackColor = true;
@@ -146,22 +148,6 @@ namespace PantallasBD
             this.btnRegresar.UseVisualStyleBackColor = true;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
-            // txtAfectacion
-            // 
-            this.txtAfectacion.Location = new System.Drawing.Point(843, 229);
-            this.txtAfectacion.Margin = new System.Windows.Forms.Padding(4);
-            this.txtAfectacion.Name = "txtAfectacion";
-            this.txtAfectacion.Size = new System.Drawing.Size(59, 22);
-            this.txtAfectacion.TabIndex = 10;
-            // 
-            // txtActualizacion2
-            // 
-            this.txtActualizacion2.Location = new System.Drawing.Point(843, 323);
-            this.txtActualizacion2.Margin = new System.Windows.Forms.Padding(4);
-            this.txtActualizacion2.Name = "txtActualizacion2";
-            this.txtActualizacion2.Size = new System.Drawing.Size(59, 22);
-            this.txtActualizacion2.TabIndex = 10;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -184,22 +170,65 @@ namespace PantallasBD
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(288, 314);
+            this.txtCantidad.Location = new System.Drawing.Point(287, 314);
             this.txtCantidad.Margin = new System.Windows.Forms.Padding(4);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(157, 22);
             this.txtCantidad.TabIndex = 4;
+            // 
+            // txtAfectacion1
+            // 
+            this.txtAfectacion1.AutoSize = true;
+            this.txtAfectacion1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAfectacion1.Location = new System.Drawing.Point(831, 224);
+            this.txtAfectacion1.Name = "txtAfectacion1";
+            this.txtAfectacion1.Size = new System.Drawing.Size(20, 20);
+            this.txtAfectacion1.TabIndex = 14;
+            this.txtAfectacion1.Text = "- ";
+            // 
+            // txtActualizacion1
+            // 
+            this.txtActualizacion1.AutoSize = true;
+            this.txtActualizacion1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtActualizacion1.Location = new System.Drawing.Point(831, 315);
+            this.txtActualizacion1.Name = "txtActualizacion1";
+            this.txtActualizacion1.Size = new System.Drawing.Size(20, 20);
+            this.txtActualizacion1.TabIndex = 15;
+            this.txtActualizacion1.Text = "- ";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(802, 223);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(28, 22);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "N:";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(802, 314);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(28, 22);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "N:";
             // 
             // FormActualizar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txtActualizacion1);
+            this.Controls.Add(this.txtAfectacion1);
             this.Controls.Add(this.txtCantidad);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtActualizacion2);
-            this.Controls.Add(this.txtAfectacion);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnActualizarStock);
@@ -231,11 +260,12 @@ namespace PantallasBD
         private System.Windows.Forms.Button btnActualizarStock;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnRegresar;
-        private System.Windows.Forms.TextBox txtAfectacion;
-        private System.Windows.Forms.TextBox txtActualizacion2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtCantidad;
-        
+        private System.Windows.Forms.Label txtAfectacion1;
+        private System.Windows.Forms.Label txtActualizacion1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label9;
     }
 }

@@ -20,7 +20,7 @@ namespace PantallasBD
 
         string strConn;
         string strComm;
-        SqlConnection conn;
+        SqlConnection conn; 
         SqlCommand comm;
 
         private void btnConsultar_Click(object sender, EventArgs e)
@@ -48,7 +48,7 @@ namespace PantallasBD
                     item.SubItems.Add(tipo.ToString());
                     item.SubItems.Add(proveedor.ToString());
                     listaConsulta.Items.Add(item);
-                }
+                }   
                 textCodigo.Clear();
             }
         }

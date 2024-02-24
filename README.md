@@ -71,10 +71,15 @@ La pantalla consultar permitirá consultar los parámtros que presenta la tabla 
 
 > 1. abrir visual code
 > 2. selecciónar del menú de git, la opción clonar repositorio
+>
 >    ![image](https://github.com/Mike37Jet/PantallasBD/assets/71087557/510fee4c-b9cc-44a5-9f9d-0e647a90c7a2)
-> 3. se le mostrara la siguiente pantalla. 
+>    
+> 3. se le mostrara la siguiente pantalla
+>
 >    ![image](https://github.com/Mike37Jet/PantallasBD/assets/71087557/fb83c32a-6f1d-418b-a5cf-55dd73b3a5ac)
+>    
 > 4. en el campo de localización de repositorio ingresar el siguiente link:
->      
-> 8. dar click en clonar. Y obtendrá el proyecto
->  #### Nota: en la conexión 
+>    
+>     --- https://github.com/Mike37Jet/PantallasBD.git
+> 5. dar click en clonar. Y obtendrá el proyecto
+>  #### Nota: en la conexión a la base de datos se deberá cambiar el nombre actual por su nombre del servidor de sqlserver
